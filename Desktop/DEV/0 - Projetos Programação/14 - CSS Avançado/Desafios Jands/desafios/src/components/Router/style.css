@@ -1,0 +1,105 @@
+.navbar {
+  background-color: #000;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* RESPONSIBLE */
+@media (max-width: 480px) {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .menubutton {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(197, 196, 196, 0.978);
+    margin: 0 auto 0 1rem;
+    font-size: 1.5rem;
+    transition: 0.2s;
+  }
+  ul {
+    margin-left: 1rem;
+  }
+  .dropbtn {
+    color: #282c34;
+    padding: 10px 11px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282c34;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .menubutton {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(197, 196, 196, 0.978);
+    margin: 0 auto 0 1rem;
+    font-size: 1.5rem;
+    transition: 0.2s;
+  }
+  ul {
+    margin-left: 1rem;
+  }
+  .dropbtn {
+    color: #282c34;
+    padding: 10px 11px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282c34;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  div .dropdown span {
+    display: none;
+  }
+  div .dropdown {
+    margin: 0.8rem 1.5rem;
+    position: absolute;
+    width: 200px;
+  }
+}

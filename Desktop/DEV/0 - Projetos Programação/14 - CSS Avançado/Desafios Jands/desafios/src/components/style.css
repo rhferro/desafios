@@ -1,0 +1,85 @@
+div .entrances {
+  margin: 10px auto 10px;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  background-color: rgb(161, 159, 159);
+  color: rgb(34, 33, 32);
+  width: 40%;
+  height: 300px;
+}
+/* ESSES VALORES SERÃO REPETIDOS PARA AS OUTRAS CONVERSÕES */
+.values {
+  border-radius: 5px;
+  height: 25px;
+  width: 90%;
+  margin: 0 4% 5px;
+  font-size: 1rem;
+}
+
+.content {
+  width: 100%;
+
+  height: 50px;
+}
+
+.converter {
+  width: 100%;
+  text-align: center;
+}
+.button {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(197, 196, 196, 0.978);
+  margin: 6px auto;
+  font-size: 1.6rem;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: rgba(143, 142, 142, 0.978);
+}
+.button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+div .normalText,
+p {
+  margin: 15px 4% 7px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* RESPONSIBLE */
+@media (max-width: 480px) {
+  div .entrances {
+    width: 70%;
+    height: auto;
+    padding-bottom: 10%;
+  }
+  div .entrances h1 {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  div .entrances {
+    width: 60%;
+    height: auto;
+    padding-bottom: 10%;
+  }
+  div .entrances h1 {
+    font-size: 1.8rem;
+    margin-bottom: 7px;
+  }
+}
+@media (min-width: 769px) {
+  div .entrances {
+    width: 40%;
+    height: auto;
+    padding-bottom: 10%;
+  }
+}
