@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './style.css';
 import { MdAutorenew } from 'react-icons/md';
-import Menu from './Router/Menu.js';
 
 export default function DaysConverter() {
   const [days, setDays] = useState('');
@@ -17,10 +16,8 @@ export default function DaysConverter() {
   }
   return (
     <>
-      <Menu />
-
       <div className="entrances">
-        <h1>Dias</h1>
+        <h1>Dias em Segundos</h1>
         <div className="normalText">
           Digite uma quantidade qualquer de dias para descobrir o equivalente em
           segundos

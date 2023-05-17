@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './style.css';
 import { MdAutorenew } from 'react-icons/md';
-import Menu from './Router/Menu.js';
 
 export default function MeterConverter() {
   const [valueM, setValueM] = useState('');
@@ -44,7 +43,6 @@ export default function MeterConverter() {
 
   return (
     <>
-      <Menu />
       <div className="entrances">
         <h1>Metros² para Centímetros² (e vive-versa)</h1>
         <div className="normalText">

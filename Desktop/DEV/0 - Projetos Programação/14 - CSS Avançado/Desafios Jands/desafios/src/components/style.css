@@ -38,6 +38,16 @@ div .entrances {
   transition: 0.2s;
 }
 
+.img {
+  width: 100%;
+  text-align: center;
+  /* padding: 0 auto; */
+}
+img {
+  width: 300px;
+  margin: 15px auto;
+}
+
 .button:hover {
   background-color: rgba(143, 142, 142, 0.978);
 }
@@ -46,11 +56,30 @@ div .entrances {
   transform: translateY(2px);
 }
 
+.dateDiv {
+  width: 100%;
+  text-align: center;
+}
+.date {
+  font-size: 1.2rem;
+}
+
 div .normalText,
 p {
   margin: 15px 4% 7px;
   font-size: 1rem;
   text-align: justify;
+}
+
+.temperatures {
+  display: flex;
+  justify-content: start;
+  margin: 0 2rem;
+}
+
+.tRadio {
+  font-size: 1.12rem;
+  margin: 0 4% 5px;
 }
 
 /* RESPONSIBLE */
@@ -64,6 +93,13 @@ p {
     font-size: 1.5rem;
     margin-bottom: 7px;
   }
+  img {
+    width: 10rem;
+  }
+  .tRadio {
+    font-size: 0.8rem;
+    margin: 0 4% 5px;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   div .entrances {
@@ -75,11 +111,19 @@ p {
     font-size: 1.8rem;
     margin-bottom: 7px;
   }
+  .tRadio {
+    font-size: 1rem;
+    margin: 0 4% 5px;
+  }
 }
 @media (min-width: 769px) {
   div .entrances {
     width: 40%;
     height: auto;
     padding-bottom: 10%;
+  }
+  .tRadio {
+    font-size: 1.1rem;
+    margin: 0 4% 5px;
   }
 }

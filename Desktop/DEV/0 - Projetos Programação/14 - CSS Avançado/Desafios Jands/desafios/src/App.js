@@ -1,7 +1,12 @@
+import Home from './components/Home.js';
+import Menu from './components/Router/Menu.js';
+
+import { Routes, Route } from 'react-router-dom';
 import DaysConverter from './components/DaysConverter.js';
 import MeterConverter from './components/MeterConverter.js';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home.js';
+import Triangle from './components/Triangle.js';
+import YearsInSeconds from './components/YearsInSeconds.js';
+import TemperatureConverter from './components/TemperatureConverter.js';
 
 import './global.css';
 
@@ -10,20 +15,22 @@ function App() {
     <>
       <header className="App-header">
         <h1>Desafios</h1>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
+        <Menu />
 
-            <Route path="/MeterConverter" element={<MeterConverter />} />
-            <Route path="/DaysConverter" element={<DaysConverter />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          <Route path="/MeterConverter" element={<MeterConverter />} />
+          <Route path="/DaysConverter" element={<DaysConverter />} />
+          <Route path="/Triangle" element={<Triangle />} />
+          <Route path="/YearsInSeconds" element={<YearsInSeconds />} />
+          <Route
+            path="/TemperatureConverter"
+            element={<TemperatureConverter />}
+          />
+        </Routes>
       </header>
-      <main>
-        {/*  */}
-        {/* <MeterConverter />*/}
-        {/* <DaysConverter /> */}
-      </main>
+      <main>{/* <Home /> */}</main>
     </>
   );
 }

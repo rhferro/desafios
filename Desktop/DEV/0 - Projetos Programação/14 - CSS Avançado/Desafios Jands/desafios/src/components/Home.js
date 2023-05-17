@@ -1,10 +1,8 @@
 import './style.css';
-import Menu from './Router/Menu.js';
 
 export default function Home() {
   return (
     <div>
-      <Menu />
       <div className="entrances">
         <h1>Home</h1>
         <div className="normalText">
